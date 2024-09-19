@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Game & Phone Bill Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to the Word Game & Phone Bill Calculator</h1>
+
+        <section class="word-game">
+            <h2>Word Game</h2>
+            <form id="wordGameForm">
+                <label for="sentence">Enter a sentence:</label>
+                <input type="text" id="sentence" name="sentence" required>
+                <button type="submit">Analyze Sentence</button>
+            </form>
+            <div class="result" id="wordGameResult"></div>
+        </section>
+
+        <section class="phone-bill">
+            <h2>Total Phone Bill</h2>
+            <form id="phoneBillForm">
+                <label for="bill">Enter your bill details (comma separated):</label>
+                <input type="text" id="bill" name="bill" required>
+                <button type="submit">Calculate Total</button>
+            </form>
+            <div class="result" id="phoneBillResult"></div>
+        </section>
+
+        <section class="airtime">
+            <h2>Enough Airtime</h2>
+            <form id="airtimeForm">
+                <label for="airtimeBill">Enter your bill details (comma separated):</label>
+                <input type="text" id="airtimeBill" name="airtimeBill" required>
+                
+                <label for="availableAmount">Available Amount:</label>
+                <input type="number" id="availableAmount" name="availableAmount" required>
+                
+                <button type="submit">Check Airtime</button>
+            </form>
+            <div class="result" id="airtimeResult"></div>
+        </section>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
